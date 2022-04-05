@@ -1,4 +1,4 @@
-n = int(input("Enter the height of triangle : "))
+n = int(input("Enter the height of Pattern : "))
 
 for i in range (n):
     for j in range (n):
@@ -6,7 +6,7 @@ for i in range (n):
             print("* ",end="")
         elif(not(i)):
             print("* ",end="")
-        elif(j==5-1):
+        elif(j==n-1):
             print("* ",end="")
         else:
             print("  ",end="")
