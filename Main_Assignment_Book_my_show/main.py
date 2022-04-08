@@ -3,10 +3,6 @@ from login import login
 
 
 def numbers_to_strings(choice):
-    # switcher = {'1': login(),
-    #             '2': RegisterNewUser(),
-    #              }
-    # print(switcher[choice])
     if choice == '1':
         login()
     elif choice == '2':

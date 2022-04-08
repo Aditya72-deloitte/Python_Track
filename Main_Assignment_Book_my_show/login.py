@@ -3,11 +3,6 @@ from user_login import user_login
 
 
 def choiceAgain(input_choice):
-    # switcher = {
-    #     1: "You're in admin login",
-    #     2: "You're in user login",
-    # }
-    # print(switcher[input_choice])
     if input_choice == 1:
         admin_login()
     elif input_choice == 2:
