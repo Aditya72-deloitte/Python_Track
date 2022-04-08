@@ -37,19 +37,19 @@ def addMovie():
 
     # Open our existing CSV file in append mode
     # Create a file object for this file
-    with open('MovieList.csv', 'a') as f_object:
+    with open('MovieList.csv', 'a', newline='') as f_object:
         # Pass this file object to csv.writer()
         # and get a writer object
         writer_object = writer(f_object)
 
-        adding_movie(writer_object, lst)
+        adding(writer_object, lst)
         print("Movie Added")
 
         # Close the file object
         f_object.close()
 
 
-def adding_movie(writer_object, lst):
+def adding(writer_object, lst):
     # Pass the list as an argument into
     # the writerow()
     writer_object.writerow(lst)

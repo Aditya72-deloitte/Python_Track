@@ -17,7 +17,7 @@ def user_login():
             for row in csv_reader:
                 i = i + 1
                 # row variable is a list that represents a row in csv
-                if row[0] == userName and row[1] == userPass:
+                if row[0] == userName and row[3] == userPass:
                     insideUserLogin()
                 else:
                     flag = flag + 1
